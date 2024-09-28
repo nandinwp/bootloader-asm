@@ -1,2 +1,11 @@
 sudo apt install nasm
 sudo apt install qemu-system-x86
+sudo apt install make
+
+sudo apt install git
+
+# Command to build
+make all
+qemu-system-x86_64 -hda ./boot.bin
+qemu-system-x86_64 -hda ./boot.bin -drive format=raw,file=./boot.bin
+
